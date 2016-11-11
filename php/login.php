@@ -7,7 +7,7 @@ if (!empty($_POST)) {
     $sql = 'SELECT id, pwd FROM user WHERE login = "'.$_POST['login'].'"';
     $res = $db->query($sql)->fetch_array();
 
-    if ($res['pwd'] === $_POST['pwd']) {
+    if ($res['pwd'] === MD5($_POST['pwd'])) {
         $_SESSION['connected'] = true;
         $_SESSION['user_id'] = $res['id'];
 

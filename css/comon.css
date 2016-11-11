@@ -1,0 +1,146 @@
+body {
+
+}
+
+form {
+    height: 100%;
+}
+
+
+.contact label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: right;
+    margin-top: 20px;
+}
+.contact input {
+    margin-top: 20px;
+    display: inline-block;
+    float: left;
+}
+
+.contact textarea {
+    margin-top: 20px;
+    display: inline-block;
+    float: left;
+}
+
+.form-group {
+    height: 30px;
+}
+
+.slider {
+    margin: 0 auto;
+    width: 601px;
+    height: 301px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 600px;
+    height: 300px;
+}
+
+
+
+.item img{
+    margin: 0 auto;
+}
+
+.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 600px;
+    height: 300px;
+}
+
+.menu {
+    margin: 0 auto;
+    width: 570px;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form {
+    height: 550px;
+}
+
+footer{
+    margin-top: 0px;
+    background:#ccc;
+    position:absolute;
+    width:100%;
+    padding-top:50px;
+    height:50px;
+}
+
+body > .container {
+    padding-top: 60px;
+}
+
+.footer {
+    margin-top: 0px;
+    max-height: 315px;
+    height: 100%;
+    background-color: lightgrey;
+}
+
+.tiny-contact {
+    float: left;
+    width: 25%;
+    margin-left: 100px;
+}
+
+.tiny-contact h2 {
+    font-size: medium;
+    font-weight: bold;
+}
+
+.tiny-contact-list {
+    font-size: 13px;
+}
+.certif {
+    float: none;
+}
+
+.certif img {
+    width: 250px;
+    height: 150px;
+}

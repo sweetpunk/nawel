@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-11-10 22:57:13
+/* Smarty version 3.1.29, created on 2016-11-11 12:10:52
   from "C:\wamp64\www\nawel\tpl\layout.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5824fb493e81f7_49785048',
+  'unifunc' => 'content_5825b54cc44a51_99440615',
   'file_dependency' => 
   array (
     '95677d729f0c548be398dc02ec7ef374247336d7' => 
     array (
       0 => 'C:\\wamp64\\www\\nawel\\tpl\\layout.tpl',
-      1 => 1478818529,
+      1 => 1478866251,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5824fb493e81f7_49785048 ($_smarty_tpl) {
+function content_5825b54cc44a51_99440615 ($_smarty_tpl) {
 ?>
 <head>
     <title>Swag</title>

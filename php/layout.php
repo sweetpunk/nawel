@@ -11,12 +11,13 @@ if (version_compare(PHP_VERSION, '5.4.0', '<')) {
 $actual_link = "$_SERVER[REQUEST_URI]";
 $explodedLink = explode('/', $actual_link);
 $currentPage = end($explodedLink);
-var_dump($_SESSION);exit;
+
 if ('login.php' !== $currentPage) {
     if (true !== $_SESSION['connected']) {
         header('Location: login.php');
         exit;
     }
 }
+
 
 

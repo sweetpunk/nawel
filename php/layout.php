@@ -8,6 +8,10 @@ if (version_compare(PHP_VERSION, '5.4.0', '<')) {
        if (session_status() == PHP_SESSION_NONE) {session_start();}
     }
 
+echo '<script type="text/javascript">
+	var sessUID = '. $_SESSION['user_id'].';</script>';
+
+
 $actual_link = "$_SERVER[REQUEST_URI]";
 $explodedLink = explode('/', $actual_link);
 $currentPage = end($explodedLink);

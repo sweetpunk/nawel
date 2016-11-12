@@ -7,4 +7,5 @@
     <!--<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />-->
     <script src="../js/jquery.min.js"></script>
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/nawel.js"></script>
 </head>

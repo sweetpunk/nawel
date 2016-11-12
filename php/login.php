@@ -11,8 +11,14 @@ if (!empty($_POST)) {
         $_SESSION['connected'] = true;
         $_SESSION['user_id'] = $res['id'];
 
-        header('Location: home.php');
-        exit;
+        if ($_POST['login'] == $_POST['pwd']) {
+            header('location: account.php');
+            exit;
+        }
+        else {
+            header('Location: home.php');
+            exit;
+        }
     }
 
     echo 'you fail to connect';

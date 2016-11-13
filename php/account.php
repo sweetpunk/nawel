@@ -2,7 +2,7 @@
 
 include('./layout.php');
 
-$db = new mysqli('127.0.0.1', 'root', '', 'nawel');
+$db = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_DATABASE);
 
 $sql = 'SELECT * FROM user WHERE id = '.$_SESSION['user_id'].'';
 $res = $db->query($sql)->fetch_array();

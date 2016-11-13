@@ -2,9 +2,9 @@
 
 include('./layout.php');
 
-$db = new mysqli('127.0.0.1', 'root', '', 'nawel');
+$db = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_DATABASE);
 
-$sql = 'SELECT id, name FROM lists WHERE user_id <> '.$_SESSION['user_id'].'';
+$sql = 'SELECT id, name FROM lists WHERE user_id NOT IN ('.$_SESSION['user_id'].',1)';
 $res = $db->query($sql)->fetch_all();
 
 $smarty->assign('res', $res);

@@ -44,8 +44,8 @@
 				</div>
 			</div>
 			<div class='user-action-box'>
-				<input type='submit' class='btn btn-hidden' id='submit' value='sauvegarder les changements' />
-				<input type='button' class='btn btn-success' id='validation-form' value='sauvegarder les changements' />
+				<input type='submit' class='my-btn btn btn-hidden' id='submit' value='sauvegarder les changements' />
+				<input type='button' class='my-btn btn btn-success' id='validation-form' value='sauvegarder les changements' />
 			</div>
 		</form>
 	</div>

@@ -1,6 +1,8 @@
 <?php
 
 require_once('./../lib/libs/Smarty/Smarty.class.php');
+require_once('../config.php');
+
 $smarty = new Smarty();
 if (version_compare(PHP_VERSION, '5.4.0', '<')) {
         if(session_id() == '') {session_start();}
@@ -8,8 +10,10 @@ if (version_compare(PHP_VERSION, '5.4.0', '<')) {
        if (session_status() == PHP_SESSION_NONE) {session_start();}
     }
 
-echo '<script type="text/javascript">
-	var sessUID = '. $_SESSION['user_id'].';</script>';
+if (isset($_SESSION['user_id'])) {
+	echo '<script type="text/javascript">
+	var sessUID = '. (int)$_SESSION['user_id'].';</script>';
+}
 
 
 $actual_link = "$_SERVER[REQUEST_URI]";
@@ -22,6 +26,8 @@ if ('login.php' !== $currentPage) {
         exit;
     }
 }
+
+$smarty->assign('currentPage', $currentPage);
 
 
 

@@ -2,7 +2,7 @@
 include('layout.php');
 
 if (!empty($_POST)) {
-    $db = new mysqli('127.0.0.1', 'root', '', 'nawel');
+    $db = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_DATABASE);
 
     $sql = 'SELECT id, pwd FROM user WHERE login = "'.$_POST['login'].'"';
     $res = $db->query($sql)->fetch_array();

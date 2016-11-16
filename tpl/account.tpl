@@ -1,6 +1,6 @@
 <div class='list-content'>
 	<div class='user-form'>
-		<form action='save.php' method='POST'>
+		<form action='save.php' method='POST' enctype='multipart/form-data'>
 			<input type='hidden' name='user_infos' id='user_infos' value='1' />
 			<div class='log-infos'>
 				<div class='log-infos-label'>
@@ -40,6 +40,13 @@
 					<div class='user-row'>
 						<label for='lastname'>Nom :</label>
 						<input class='rounded-input' type='text'  style="float: right;" name='lastname' id='lastname' value='{$res["last_name"]}'/>
+					</div>
+					<div class='user-row'>
+						<img class='acc-user-icon' src='../img/avatar/{$res["avatar"]}' />
+						<input type='hidden' name='MAX_FILE_SIZE' value='1048576' />
+						<label for='avatar'>Avatar (JPG, PNG ou GIF | max. 1Mo) :</label>
+						<input type='file' name='avatar' id='avatar'/>
+						<input type='hidden' name='current-avatar' value='{$res["avatar"]}'/>
 					</div>
 				</div>
 			</div>

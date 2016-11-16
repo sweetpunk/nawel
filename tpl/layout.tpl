@@ -1,6 +1,7 @@
 <head>
-    <title>Swag</title>
+    <title>Nawel</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="noindex" />
     <link href='../css/bootstrap-theme.css' rel='stylesheet' type='text/css' />
     <link href='../css/bootstrap.min.css' rel='stylesheet' type='text/css' />
     <link href='../css/comon.css' rel='stylesheet' type='text/css' />

@@ -8,7 +8,7 @@
 			<div class='infos-block'>
 				<div class='my-item-name'>
 					<label>Nom : </label>
-					<input class='rounded-input long-input' name='name[]' type='text' value='{$list[2]}' />
+					<input class='rounded-input long-input' name='name[]' type='text' value='{$list[2]|escape}' />
 				</div>
 				<div class='my-item-img'>
 					<label>Image : </label>
@@ -30,7 +30,7 @@
 					<option value='USD'>$</option>
 				</select>
 			</div>
-			<input type='button' class='btn btn-danger remove-btn' value="Supprimer" />
+			<input type='button' class='btn btn-danger remove-btn hidden-btn' value="Supprimer" />
 		</div>
 	{/foreach}
 	</div>

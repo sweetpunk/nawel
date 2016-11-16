@@ -1,5 +1,5 @@
 body {
-
+    background-image: url('http://cdn.wallpapersafari.com/38/72/l2QW79.png');
 }
 
 form {
@@ -145,6 +145,11 @@ body > .container {
     height: 150px;
 }
 
+.bold {
+    font-weight: bold;
+    font-size: 120%;
+}
+
 .banner {
     width: 100%;
     height: 252px;
@@ -154,16 +159,19 @@ body > .container {
 }
 
 .list-content {
-    position: relative;
     top: 20px;
 }
 
 .list-item {
     float: left;
     position: relative;
-    width: 24%;
+    width: 16%;
     background-color: #DEDEDE;
     margin: 0 6px 10px 6px;
+}
+
+.list-name {
+    font-size: 140%;
 }
 
 .list-item:before {
@@ -184,11 +192,24 @@ body > .container {
 }
 
 .user-icon {
+    width: 53%;
+    height: 70%;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.acc-user-icon {
     width: 160px;
     height: 160px;
-    background-image: url('../img/avatar/default.png');
     margin: auto;
     border-radius: 160px;
+}
+
+.mini-user-icon {
+    width: 45px;
+    height: 45px;
+    margin: auto;
+    border-radius: 45px;
 }
 
 .header {
@@ -197,16 +218,25 @@ body > .container {
 
 .item {
     margin-left: 3%;
+    margin-right: 3%;
     border: 1px solid;
+    background-color: white;
 }
 
-.item-check {
+.item-check, .header-item-check {
     min-width: 5%;
 }
 
-.item-name {
+.item-name, .header-item-name {
     display: inline-block;
     min-width: 10%;
+    width: 200px;
+    font-size: 120%;
+}
+
+.header-item-img {
+    display: inline-block;
+    width: 280px;
 }
 
 .item-img {
@@ -220,19 +250,28 @@ body > .container {
     height: 280px;
 }
 
-.item-desc {
+.item-desc, .header-item-desc {
     display: inline-block;
     min-width: 10%;
+    width: 400px;
 }
 
-.item-cost {
+.item-cost, .header-item-cost {
     display: inline-block;
     min-width: 10%;
+    width: 100px;
 }
 
-.item-taken {
+.item-taken, .header-item-taken {
     display: inline-block;
     min-width: 10%;
+    width: 100px;
+}
+
+.item-comment, .header-item-comment {
+    display: inline-block;
+    min-width: 10%;
+    width: 100px;
 }
 
 .item-disabled {
@@ -334,12 +373,20 @@ body > .container {
     -ms-transition: all .2s;
     transition: all .2s;
 }
-[type="checkbox"]:not(:checked) + label .ui:before {
+[type="checkbox"].item-check:not(:checked) + label .ui:before {
     content: "dispo";
     left: 32px
 }
-[type="checkbox"]:checked + label .ui:after {
+[type="checkbox"].item-check:checked + label .ui:after {
     content: "pris";
+    color: #39D2B4;
+}
+[type="checkbox"].participant:not(:checked) + label .ui:before {
+    content: "non";
+    left: 32px
+}
+[type="checkbox"].participant:checked + label .ui:after {
+    content: "oui";
     color: #39D2B4;
 }
 [type="checkbox"]:focus + label:before {
@@ -396,13 +443,13 @@ body > .container {
 }
 
 .container {
-    width: 514px;
+    width: 544px;
     height: 50px;
 }
 
 .infos-block {
     display: inline-block;
-    width: 755px;
+    width: 45%;
 }
 
 .infos-block input {
@@ -422,5 +469,122 @@ body > .container {
 }
 
 .long-input {
-    width: 700px;
+    width: 90%;
+}
+
+.hidden-btn {
+    display: none;
+}
+
+@import http://fonts.googleapis.com/css?family=Raleway;
+/*----------------------------------------------
+CSS Settings For HTML Div ExactCenter
+------------------------------------------------*/
+#log-main {
+    width:300px;
+    height:200px;
+    margin: auto;
+    font-family:raleway
+}
+#error {
+    color:red
+}
+#log {
+    width:300px;
+    float:left;
+    border-radius:10px;
+    font-family:raleway;
+    border:2px solid #ccc;
+    padding:10px 40px 25px;
+    margin-top:30%
+}
+#log-login, #log-pwd {
+    width:99.5%;
+    padding:10px;
+    margin-top:8px;
+    border:1px solid #ccc;
+    padding-left:5px;
+    font-size:16px;
+    font-family:raleway
+}
+#log-submit {
+    width:100%;
+    background-color:#FFBC00;
+    color:#fff;
+    border:2px solid #FFCB00;
+    padding:10px;
+    font-size:20px;
+    cursor:pointer;
+    border-radius:5px;
+    margin-bottom:15px
+}
+
+#chat-body {
+    border-collapse:collapse;
+    background-color:grey;
+    margin:auto;
+    width:50%;
+    border-radius:10px;
+    overflow:hidden;
+}
+  
+#chat-form {
+    height:100px;
+    padding:2%;
+    background-color:silver;
+}
+ 
+#chat-display {
+    width:95%;
+    height:100%;
+    background-color:white;
+    margin:auto;
+    overflow-y:scroll;
+}
+ 
+#chat-form-table {
+    width:100%;
+    border-collapse:collapse;
+    text-align:center;
+}
+
+#chat-message {
+    border-radius:10px;
+    padding:2%;
+    width:100%;
+}
+#chat-submit {
+    width:100%;
+    padding:2%;
+    border-radius:10px;
+    font-family:raleway;
+    font-size:medium;
+}
+ 
+#table_message {
+    width:100%;
+    font-size:small;
+    font-family:raleway;
+    border-collapse:collapse;
+    table-layout:fixed;
+}
+ 
+.info_message {
+    overflow:hidden;
+    font-size:x-small;
+    padding:1%;
+}
+
+.message {
+    width:80%;
+    x-overflow:hidden;
+    y-overflow:visible;
+    text-align:left;
+    padding:1%;
+}
+
+.message2 {
+    width:100%;
+    overflow:hidden;
+    word-break: break-all;
 }

@@ -1,6 +1,6 @@
 <?php
-define (DB_USER, "heber_19156839");
-define (DB_PASSWORD, "uqCvl3nv");
-define (DB_DATABASE, "heber_19156839_nawel");
-define (DB_HOST, "sql205.hebergratuit.net");
+define (DB_USER, "root");
+define (DB_PASSWORD, "");
+define (DB_DATABASE, "nawel");
+define (DB_HOST, "localhost");
 ?>

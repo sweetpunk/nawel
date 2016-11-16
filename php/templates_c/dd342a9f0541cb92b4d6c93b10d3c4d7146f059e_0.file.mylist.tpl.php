@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-11-13 14:48:34
+/* Smarty version 3.1.29, created on 2016-11-13 17:36:42
   from "C:\wamp64\www\nawel\tpl\mylist.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_58287d424954c9_49425229',
+  'unifunc' => 'content_5828a4aac84bf3_84620352',
   'file_dependency' => 
   array (
     'dd342a9f0541cb92b4d6c93b10d3c4d7146f059e' => 
     array (
       0 => 'C:\\wamp64\\www\\nawel\\tpl\\mylist.tpl',
-      1 => 1479048512,
+      1 => 1479058493,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_58287d424954c9_49425229 ($_smarty_tpl) {
+function content_5828a4aac84bf3_84620352 ($_smarty_tpl) {
 ?>
 <form action='save.php' method='POST' accept-charset="UTF-8">
 	<input type='hidden' name='mylist' value='<?php echo $_smarty_tpl->tpl_vars['listId']->value;?>
@@ -71,7 +71,7 @@ $__foreach_list_0_saved_local_item = $_smarty_tpl->tpl_vars['list'];
 					<option value='USD'>$</option>
 				</select>
 			</div>
-			<input type='button' class='btn btn-danger remove-btn' value="Supprimer" />
+			<input type='button' class='btn btn-danger remove-btn hidden-btn' value="Supprimer" />
 		</div>
 	<?php
 $_smarty_tpl->tpl_vars['list'] = $__foreach_list_0_saved_local_item;
